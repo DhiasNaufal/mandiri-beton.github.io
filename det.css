@@ -8,6 +8,10 @@
   --changpange-color: #eee0cb;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -16,10 +20,6 @@
 
 body {
   margin: 0;
-}
-
-main p {
-  color: var(--secondary-color);
 }
 
 header > #top-header {
@@ -34,7 +34,7 @@ header > #top-header {
   z-index: 3;
   display: flex;
   height: 45px;
-  background-color: #d82624;
+  background-color: var(--main-color);
   justify-content: space-between;
   align-items: center;
   padding: 0 5vw;
@@ -75,6 +75,21 @@ nav {
   padding: 4vh 5vw;
 }
 
+#header-sosmed img:hover {
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: all 300ms ease-out;
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
 #navigation .nav-menu > ul {
   display: flex;
   list-style: none;
@@ -91,6 +106,12 @@ nav {
   border: 0;
   font-weight: bold;
   padding: 13px 20px;
+  transition: all 300ms ease-out;
+}
+.default-button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  transition: all 300ms ease-in;
 }
 
 #page-judul {
@@ -112,87 +133,117 @@ nav {
   background-size: cover;
 }
 
-#tentang {
+#deskripsi {
   display: flex;
   margin: 5vh 10vw;
   gap: 20px;
 }
 
-#tentang img {
+#deskripsi img {
   height: 300px;
   width: 400px;
 }
 
-#tentang div {
+#deskripsi div {
   display: flex;
   flex: 1;
 }
 
-#tentang-img {
+#deskripsi-img {
   display: flex;
   justify-content: end;
 }
 
-#tentang-txt {
+#deskripsi-txt {
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 20px;
 }
 
-#tentang-txt h1 {
+#deskripsi-txt h1 {
   font-size: 1.8rem;
 }
 
-#tentang-txt p {
+#deskripsi-txt p {
   padding-right: 5vw;
 }
 
-#sejarah {
+#benefit {
   display: flex;
   margin: 10vh 10vw;
-  gap: 100px;
+  gap: 20px;
 }
 
-#sejarah-kiri {
-  display: flex;
-  flex-direction: column;
-  flex: 3;
-  gap: 10px;
+#benefit > div {
+  flex: 1;
 }
-#sejarah-kiri p {
-  text-align: justify;
-}
-#sejarah-kanan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 2;
-}
-#sejarah-kanan img {
-  height: 70px;
-}
-#sejarah-kanan p {
+#benefit h1 {
+  font-size: 1.5rem;
   text-align: center;
 }
-
-#loc-card {
+.desc-card {
+  display: flex;
+  border: 1px solid var(--gray-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 3vh 3vw;
+}
+#kota {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 6px;
-  border: 1px solid var(--gray-color);
-  padding: 10px;
-  background-color: white;
-  gap: 20px;
-  filter: drop-shadow(7px 10px 0px #d82624);
+  gap: 10px;
+}
+#row-1,
+#row-2,
+#row-3,
+#row-4 {
+  display: flex;
+  gap: 10px;
 }
 
-#visi-misi {
+.container-city {
+  border: 1px solid var(--gray-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 2vh 2vw;
+}
+
+#detail-1 {
   display: flex;
   margin: 10vh 10vw;
-  gap: 50px;
+  gap: 20px;
+}
+#detail-1 > div {
+  flex: 1;
+}
+
+#detail-2 {
+  display: flex;
+  margin: 10vh 10vw;
+  gap: 20px;
+}
+#detail-2 > div {
+  flex: 1;
+}
+
+#documentation-judul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.judul-section {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 600;
+}
+.judul-section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.8vh;
+  background-color: #d82624;
 }
 footer {
   background-color: var(--main-color);
@@ -214,6 +265,11 @@ footer {
 }
 .footer-left p {
   margin: 2vh 0px;
+}
+.footer-center p {
+  margin: 7px 0px;
+  display: flex;
+  gap: 10px;
 }
 
 .footer-logo img {
@@ -240,12 +296,4 @@ footer {
 }
 .developed a {
   display: flex;
-}
-@media only screen and (max-width: 1200px) {
-  .products-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 3vh 0vw;
-  }
 }

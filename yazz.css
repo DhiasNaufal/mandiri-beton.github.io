@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap");
- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
@@ -93,10 +91,10 @@ button:hover {
   background-color: var(--secondary-color);
   transition: all 300ms ease-in;
 }
-.products-list a {
+.secondary-btn {
   transition: all 300ms ease-out;
 }
-.products-list a:hover {
+.secondary-btn:hover {
   cursor: pointer;
   color: var(--main-color);
   transition: all 200ms ease-in;
@@ -154,7 +152,13 @@ button:hover {
 
 .right-jbt img {
   margin: 0px -42px;
+  transition: all 200ms ease-in;
   filter: drop-shadow(7px 10px 0px #d82624);
+}
+.right-jbt img:hover {
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+  filter: drop-shadow(7px 10px 0px var(--secondary-color));
 }
 .txt-left-jbt {
   display: flex;
@@ -222,8 +226,20 @@ button:hover {
   color: var(--main-color);
 }
 .about-us-right {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   text-align: justify;
+  align-items: start;
+}
+.about-us-right a {
+  transition: all 300ms ease-in;
+  text-decoration: none;
+}
+.about-us-right a:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  transition: all 300ms ease-in;
 }
 
 #why-us {
@@ -289,6 +305,9 @@ button:hover {
   flex-direction: column;
   gap: 10px;
 }
+#TKDN p {
+  text-align: center;
+}
 #TKDN > div {
   display: flex;
   gap: 10px;
@@ -301,6 +320,7 @@ button:hover {
   border: 1px solid;
   border-radius: 16px;
   padding: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 #row-1-1 > article,
@@ -311,7 +331,6 @@ button:hover {
 #product {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   margin: 3vh 0vw;
 }
@@ -330,17 +349,27 @@ button:hover {
   border-radius: 6px;
   padding: 2vh 2vw;
   gap: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .products-list img {
   display: flex;
   height: 250px;
   border-radius: 6px;
 }
-.products-list a {
+.secondary-btn {
   text-decoration: none;
   color: var(--secondary-color);
 }
 
+.default-button {
+  transition: all 300ms ease-in;
+  text-decoration: none;
+}
+.default-button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  transition: all 300ms ease-in;
+}
 footer {
   background-color: var(--main-color);
 }
@@ -361,6 +390,11 @@ footer {
 }
 .footer-left p {
   margin: 2vh 0px;
+}
+.footer-center p {
+  margin: 7px 0px;
+  display: flex;
+  gap: 10px;
 }
 
 .footer-logo img {
@@ -388,6 +422,7 @@ footer {
 .developed a {
   display: flex;
 }
+
 @media only screen and (max-width: 1200px) {
   .products-list {
     display: flex;
