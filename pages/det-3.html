@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mandiri Beton : Pagar Beton Precast</title>
-    <link rel="stylesheet" href="det.css" />
+    <link rel="stylesheet" href="../style/det.css" />
   </head>
   <body>
     <header>
@@ -13,7 +13,7 @@
           <a href="https://wa.me/082127920222" target="_blank">
             <div class="transparent-button">
               <img
-                src="asset/icons/img/phone-call.png"
+                src="../asset/icons/img/phone-call.png"
                 alt="Logo"
                 class="button-logo"
               />
@@ -21,34 +21,39 @@
             </div>
           </a>
           <div class="transparent-button">
-            <img src="asset/icons/img/mail.png" alt="" class="button-logo" />
+            <img src="../asset/icons/img/mail.png" alt="" class="button-logo" />
             <span class="button-text">mandiribeton@yahoo.com</span>
           </div>
         </div>
         <div id="header-sosmed">
-          <img class="button-logo" src="asset/icons/img/facebook.png" />
-          <img class="button-logo" src="asset/icons/img/linkedin.png" />
-          <img class="button-logo" src="asset/icons/img/twitter.png" />
+          <a href="https://www.facebook.com/mandiri.beton" target="_blank">
+            <img class="button-logo" src="../asset/icons/img/facebook.png" />
+          </a>
         </div>
       </section>
       <section id="navigation">
         <nav>
           <div class="nav-logo">
-            <a href="new.html">
+            <a href="../index.html">
               <img
-                src="asset/mblogo.png"
+                src="../asset/mblogo.png"
                 alt="Logo Mandiri Beton Tasikmalaya"
               />
             </a>
           </div>
           <div class="nav-menu">
             <ul>
-              <li>Beranda</li>
-              <li>Profil Perusahaan</li>
-              <li>Produk</li>
-              <li>Proyek</li>
-              <li>Informasi</li>
-              <button class="default-button">Hubungi</button>
+              <li><a href="../index.html">Beranda</a></li>
+              <li><a href="profil.html">Profil Perusahaan</a></li>
+              <li><a href="produk.html">Produk</a></li>
+              <li><a href="proyek.html">Proyek</a></li>
+              <li><a href="informasi.html">Informasi</a></li>
+              <button
+                class="default-button"
+                onclick="location.href='https://wa.me/082127920222'"
+              >
+                Hubungi
+              </button>
             </ul>
           </div>
         </nav>
@@ -56,10 +61,12 @@
     </header>
     <main>
       <div id="page-judul">
-        <h1>Profil Perusahaan</h1>
+        <h1>Saluran Beton Precast</h1>
       </div>
       <section id="deskripsi">
-        <div id="deskripsi-img"><img src="" alt="" /></div>
+        <div id="deskripsi-img">
+          <img src="../asset/img/saluran-beton.jpg" alt="" />
+        </div>
         <div id="deskripsi-txt">
           <p>
             Saluran Beton Precast, sebuah inovasi cerdas dalam konstruksi,
@@ -74,74 +81,89 @@
           </p>
           <div id="button-det">
             <a href="" class="default-button">Pesan Sekarang</a>
-            <a href="">Lihat Detail</a>
           </div>
         </div>
       </section>
       <section id="benefit">
         <div>
           <h1>Keuntungan menggunakan Pagar Beton Precast :</h1>
-          <ul>
-            <li>Cepat dan Praktis dalam pemasangan.</li>
-            <li>
-              Dapat dipindahkan sesuai kebutuhan jika sewaktu-waktu terjadi
-              perubahan tempat.
-            </li>
-            <li>
-              Permukaan halus dan rapi, sehingga tidak memerlukan plesteran
-              lagi.
-            </li>
-            <li>Kuat dan berdaya tahan tinggi terhadap perubahan cuaca.</li>
-            <li>
-              Permukaan atas lebih ramping, sehingga lahan atau jalan
-              disampingnya menjadi lebih luas.
-            </li>
-          </ul>
+          <div class="desc-card">
+            <ul>
+              <li>Cepat dan Praktis dalam pemasangan.</li>
+              <li>
+                Dapat dipindahkan sesuai kebutuhan jika sewaktu-waktu terjadi
+                perubahan tempat.
+              </li>
+              <li>
+                Permukaan halus dan rapi, sehingga tidak memerlukan plesteran
+                lagi.
+              </li>
+              <li>Kuat dan berdaya tahan tinggi terhadap perubahan cuaca.</li>
+              <li>
+                Permukaan atas lebih ramping, sehingga lahan atau jalan
+                disampingnya menjadi lebih luas.
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
           <h1>
             Kami melayani pemasangan Pagar Beton precast untuk wilayah Jawa
             Barat dan Jawa Tengah.
           </h1>
-          <div>
+          <div id="kota">
             <div id="row-1">
-              <div class="container-city">Tasikmalaya</div>
-              <div class="container-city">Tasikmalaya</div>
+              <div class="container-city">20 cm x 30 cm x 100 cm</div>
+              <div class="container-city">30 cm x 40 cm x 100 cm</div>
             </div>
             <div id="row-2">
-              <div class="container-city">Tasikmalaya</div>
-              <div class="container-city">Tasikmalaya</div>
+              <div class="container-city">40 cm x 40 cm x 100 cm</div>
+              <div class="container-city">40 cm x 50 cm x 100 cm</div>
             </div>
             <div id="row-3">
-              <div class="container-city">Tasikmalaya</div>
-              <div class="container-city">Tasikmalaya</div>
+              <div class="container-city">40 cm x 60 cm x 100 cm</div>
+              <div class="container-city">50 cm x 50 cm x 100 cm</div>
             </div>
             <div id="row-4">
-              <div class="container-city">Tasikmalaya</div>
-              <div class="container-city">Tasikmalaya</div>
+              <div class="container-city">60 cm x 60 cm x 100 cm</div>
+              <div class="container-city">60 cm x 80 cm x 100 cm</div>
             </div>
             <div id="row-4">
-              <div class="container-city">Tasikmalaya</div>
+              <div class="container-city">Custom</div>
             </div>
           </div>
         </div>
       </section>
 
       <section id="documentation">
-        <div><img src="" alt="gambar-1" /></div>
+        <div id="documentation-judul">
+          <h1 class="judul-section">Dokumentasi</h1>
+        </div>
+        <div id="documentation-img">
+          <img src="../asset/img/det-3-1.jpg" alt="gambar-1" />
+          <img src="../asset/img/det-3-2.jpg" alt="gambar-1" />
+          <img src="../asset/img/det-3-3.jpg" alt="gambar-1" />
+          <img src="../asset/img/det-3-4.jpg" alt="gambar-1" />
+          <img src="../asset/img/det-3-5.jpg" alt="gambar-1" />
+        </div>
       </section>
     </main>
     <footer>
       <section id="information">
         <div class="footer-left">
           <div class="footer-logo">
-            <img src="asset/img/nav-logo.png" alt="" />
-            <p>Akun Resmi PT Mandiri Beton Indonesia</p>
+            <a href="#top-header">
+              <img
+                src="../asset/img/nav-logo.png"
+                alt="logo-mandiri-beton-tasikmalaya"
+              />
+            </a>
+            <p>Akun Resmi PT Mandiri Beton Utama Indonesia</p>
           </div>
           <div id="header-sosmed">
-            <img class="button-logo" src="asset/icons/img/facebook.png" />
-            <img class="button-logo" src="asset/icons/img/linkedin.png" />
-            <img class="button-logo" src="asset/icons/img/twitter.png" />
+            <a href="https://www.facebook.com/mandiri.beton" target="_blank">
+              <img class="button-logo" src="../asset/icons/img/facebook.png" />
+            </a>
           </div>
         </div>
         <div class="footer-center">
@@ -149,7 +171,7 @@
           <p>
             <span>
               <img
-                src="asset/icons/img/Location.png"
+                src="../asset/icons/img/Location.png"
                 alt=""
                 class="button-logo"
             /></span>
@@ -158,14 +180,17 @@
           </p>
           <p>
             <span
-              ><img src="asset/icons/img/mail.png" alt="" class="button-logo"
+              ><img
+                src="../asset/icons/img/mail.png"
+                alt=""
+                class="button-logo"
             /></span>
             mandiribeton@yahoo.com
           </p>
           <p>
             <span
               ><img
-                src="asset/icons/img/phone-call.png"
+                src="../asset/icons/img/phone-call.png"
                 alt=""
                 class="button-logo"
             /></span>
@@ -185,7 +210,7 @@
         <div class="developed">
           <p>Developed by</p>
           <a href="https://www.linkedin.com/in/dhiasnaufal"
-            ><img src="asset/icons/img/yazz.png" alt="" class="button-logo"
+            ><img src="../asset/icons/img/yazz.png" alt="" class="button-logo"
           /></a>
         </div>
       </section>
