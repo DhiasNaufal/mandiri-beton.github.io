@@ -473,6 +473,7 @@ footer {
 }
 
 .dropdown-content {
+  visibility: hidden;
   display: none;
   flex-direction: column;
   position: absolute;
@@ -491,4 +492,5 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   gap: 10px;
   border-radius: 6px;
+  visibility: visible;
 }
