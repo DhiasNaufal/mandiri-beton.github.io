@@ -381,3 +381,81 @@ footer {
 .developed a {
   display: flex;
 }
+
+#soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3vh 0vw;
+}
+#soon h1 {
+  font-weight: 500;
+}
+
+#sejarah {
+  display: flex;
+  margin: 10vh 10vw;
+  gap: 30px;
+}
+
+#sejarah-kiri {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  gap: 10px;
+}
+#sejarah-kiri p {
+  text-align: justify;
+}
+#sejarah-kanan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+#sejarah-kanan img {
+  height: 70px;
+}
+#sejarah-kanan p {
+  text-align: center;
+}
+
+#loc-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1px solid var(--gray-color);
+  padding: 10px;
+  background-color: white;
+  gap: 20px;
+  filter: drop-shadow(7px 10px 0px #d82624);
+  width: 100%;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 200px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  border-radius: 6px;
+}
