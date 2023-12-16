@@ -489,15 +489,21 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  /* border: 1px solid var(--secondary-color); */
+  background-color: #fff;
+  box-shadow: 0px 0px 8.9px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  margin: 2vh 0vw;
 }
 .card div > div {
   display: flex;
   gap: 20px;
   align-items: center;
+
   /* flex-direction: column; */
 }
 .card img {
-  width: 200px;
+  height: 200px;
   border-radius: 100px;
 }
 .proyek1 {
@@ -521,4 +527,9 @@ footer {
 }
 #proyek {
   margin: 5vh 0px;
+}
+#rs > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
